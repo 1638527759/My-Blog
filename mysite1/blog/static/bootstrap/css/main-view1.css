@@ -1,0 +1,292 @@
+    /* 清除元素默认样式 */
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        /* cursor: url(/prectise3/sucai/魔法棒.cur), auto; */
+    }
+    
+    a {
+        text-decoration: none;
+        text-align: center;
+        display: block;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+    
+    #background {
+        height: 900px;
+        width: 100%;
+        /* top: 0%; */
+        /* background-image: linear-gradient(to left, rgb(124, 146, 245), rgb(37, 216, 192)); */
+        z-index: 0;
+        /* position: relative; */
+    }
+    
+    body {
+        background-color: rgb(224, 224, 224);
+    }
+    /* ---------------------------------------------------------------------- */
+    
+    @keyframes welcome {
+        0% {
+            right: 50px;
+        }
+        100% {
+            right: 1800px;
+        }
+    }
+    
+    .start {
+        width: 100%;
+        height: 130%;
+        background-image: linear-gradient(to right, rgb(248, 248, 232), 90%, rgba(255, 255, 255, 0));
+        animation-name: welcome;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-delay: 0.7s;
+        animation-direction: normal;
+        animation-fill-mode: both;
+        animation-name: welcome;
+        z-index: 15;
+        position: absolute;
+    }
+    /* ------------------------------------------------------------------------- */
+    
+    #butten_1 {
+        background-color: black;
+        height: 50px;
+        width: 180px;
+        position: absolute;
+        top: 200px;
+        left: -38px;
+        transform: rotate(-30deg);
+        box-shadow: 5px 5px 3px rgba(34, 34, 34, 0.7);
+        animation-name: live;
+        animation-delay: 0s;
+        animation-duration: 4s;
+        animation-direction: normal;
+        animation-timing-function: ease;
+        transition: 0.7s;
+        transition-timing-function: ease;
+        z-index: 10;
+        text-align: right;
+        font-family: fantasy;
+        font-style: italic;
+        font-size: 20px;
+        color: rgba(245, 243, 243, 0.486);
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+    
+    #butten_1:hover {
+        background-color: black;
+        height: 50px;
+        width: 250px;
+    }
+    
+    #butten_2 {
+        background-color: black;
+        height: 50px;
+        width: 180px;
+        position: absolute;
+        top: 300px;
+        left: -38px;
+        transform: rotate(-30deg);
+        box-shadow: 5px 5px 3px rgba(34, 34, 34, 0.7);
+        animation-name: live;
+        animation-delay: 0.5s;
+        animation-duration: 4s;
+        animation-direction: normal;
+        animation-timing-function: ease;
+        transition: 0.7s;
+        transition-timing-function: ease;
+        z-index: 10;
+        text-align: right;
+        font-family: fantasy;
+        font-style: italic;
+        font-size: 20px;
+        padding: 10px 10px;
+        color: rgba(245, 243, 243, 0.486);
+        text-decoration: none;
+    }
+    
+    #butten_2:hover {
+        background-color: black;
+        height: 50px;
+        width: 250px;
+    }
+    
+    #butten_3 {
+        background-color: black;
+        height: 50px;
+        width: 180px;
+        position: absolute;
+        top: 400px;
+        left: -38px;
+        transform: rotate(-30deg);
+        box-shadow: 5px 5px 3px rgba(34, 34, 34, 0.7);
+        animation-name: live;
+        animation-delay: 1s;
+        animation-duration: 4s;
+        animation-direction: normal;
+        animation-timing-function: ease;
+        transition: 0.7s;
+        transition-timing-function: ease;
+        z-index: 10;
+        text-align: right;
+        font-family: fantasy;
+        font-style: italic;
+        font-size: 20px;
+        color: rgba(245, 243, 243, 0.486);
+        text-decoration: none;
+    }
+    
+    #butten_3:hover {
+        background-color: black;
+        height: 50px;
+        width: 250px;
+    }
+    
+    @keyframes live {
+        0% {
+            width: 0px;
+        }
+        60% {
+            width: 0px;
+        }
+        80% {
+            width: 230px;
+        }
+        100% {
+            width: 180px;
+        }
+    }
+    /* ------------------------------------------------------------------------- */
+    
+    #welcome {
+        height: 200px;
+        width: 600px;
+        margin: auto;
+        position: absolute;
+        top: -40%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 10px;
+        background-color: #2221214f;
+        box-shadow: 4px 2px 4px #55555555;
+        z-index: 5;
+        /* animation-name: message;
+        animation-delay: 0s;
+        animation-duration: 6s; */
+        text-align: center;
+        color: rgb(252, 249, 249);
+        user-select: none;
+    }
+    
+    @keyframes message {
+        0% {
+            height: 200px;
+            width: 0px;
+        }
+        30% {
+            height: 200px;
+            width: 0px;
+        }
+        40% {
+            height: 200px;
+            width: 20px;
+        }
+        50% {
+            height: 200px;
+            width: 20px;
+        }
+        70% {
+            height: 200px;
+            width: 20px;
+            font-size: 0px;
+            border-radius: 5px;
+        }
+        73% {
+            font-size: 0px;
+        }
+        100% {
+            height: 200px;
+            width: 600px;
+            border-radius: 10px;
+            font-size: 80px;
+        }
+    }
+    
+    #words {
+        text-shadow: none;
+        position: relative;
+        top: 20%;
+        font-size: 80px;
+        /* animation-name: words;
+        animation-duration: 1s;
+        animation-delay: 0s; */
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #words:hover {
+        animation-name: color;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        /* animation-fill-mode: forwards; */
+    }
+    /* @keyframes words {
+        0% {
+            font-size: 0%;
+        }
+        70% {
+            font-size: 0%;
+        }
+        80% {
+            font-size: 10px;
+        }
+        100% {
+            font-size: 80px;
+        }
+    }
+     */
+    
+    @keyframes color {
+        0% {
+            text-shadow: -0px -5px rgb(255, 0, 85);
+            top: 20%;
+        }
+        12.5% {
+            top: 15%;
+        }
+        25% {
+            text-shadow: -5px 0px rgb(0, 174, 255);
+            top: 20%;
+        }
+        37.5% {
+            top: 15%;
+        }
+        50% {
+            text-shadow: 0px 5px rgb(255, 0, 85);
+            top: 20%;
+        }
+        67.5% {
+            top: 15%;
+        }
+        75% {
+            text-shadow: 5px 0px rgb(0, 174, 255);
+            top: 20%;
+        }
+        87.5% {
+            top: 15%;
+        }
+        100% {
+            text-shadow: -0px -3px rgb(255, 0, 85);
+            top: 20%;
+        }
+    }
+    /* ------------------------------------------------------------------------- */

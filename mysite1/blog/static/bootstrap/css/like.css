@@ -1,0 +1,43 @@
+.like {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+}
+
+.option {
+    position: relative;
+    top: 0;
+    float: right;
+    background-color: rgb(206, 247, 247);
+    height: 300px;
+    width: 300px;
+}
+
+#botton {
+    position: relative;
+    margin: auto;
+    z-index: 10;
+}
+
+.content {
+    position: relative;
+    margin: auto;
+    background-color: rgb(207, 247, 206);
+    height: 800px;
+    width: 60%;
+    border: solid 2px green;
+    border-radius: 10px;
+}
+
+div a {
+    position: relative;
+    display: block;
+    background-color: rgb(190, 134, 241);
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid 1px purple;
+    text-decoration: none;
+    text-align: center;
+}

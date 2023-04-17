@@ -1,0 +1,146 @@
+* {
+    padding: 0px;
+    margin: auto;
+    border: 0px;
+}
+
+canvas {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/窗.png);
+}
+
+#active {
+    position: sticky;
+    top: 0;
+}
+
+.leader {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(37, 37, 37, 0.507);
+    border-top: 2px solid rgb(4, 194, 219);
+    border-bottom: 2px solid rgb(4, 194, 219);
+    position: sticky;
+    top: 0;
+}
+
+.option {
+    float: right;
+}
+
+
+/* li:hover {
+     border-top: 1px solid rgb(4, 194, 219);
+     border-left: 1px solid rgb(4, 194, 219);
+ } */
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    font-size: 18px;
+}
+
+li a:hover:not(.active) {
+    background-color: rgba(139, 243, 243, 0.979);
+    color: rgb(0, 174, 255);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+li a:active {
+    background-color: rgba(139, 243, 243, 0.979);
+    color: rgb(0, 174, 255);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    margin: auto;
+    top: 10;
+    bottom: 0;
+    height: 800px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: rgba(17, 17, 17, 0.582);
+    box-shadow: 0px 5px 5px gray;
+}
+
+
+/* .card {
+    position: relative;
+    top: 20px;
+    width: 450px;
+    height: 230px;
+    margin: 10px;
+    background-color: rgba(252, 249, 249, 0.856);
+} */
+
+.card:hover {
+    animation: move;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0% {
+        top: 10px;
+    }
+    100% {
+        top: 5px;
+    }
+}
+
+#web a {
+    display: block;
+    /* background-color: rgb(0, 0, 0); */
+    position: relative;
+    color: rgba(0, 204, 255, 0.884);
+    font-family: fantasy;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px rgba(0, 204, 255, 0.884);
+}
+
+#web a:hover {
+    background-color: red;
+}
+
+.card-header {
+    border-radius: 10px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.card-body {
+    background-color: rgba(77, 75, 75, 0);
+}
+
+tbody {
+    width: 800px;
+}
+
+.card {
+    position: relative;
+    display: table-cell;
+    margin: auto;
+    top: 20px;
+    width: 450px;
+    height: 230px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid rgba(0, 0, 0, 0) 15px;
+    background-color: rgba(252, 249, 249, 0.856);
+}

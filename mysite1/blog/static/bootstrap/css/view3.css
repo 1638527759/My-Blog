@@ -1,0 +1,202 @@
+* {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+    background-image: linear-gradient(to left, rgb(124, 146, 245), rgb(37, 216, 192));
+}
+
+.side-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
+    width: 70px;
+    background-color: rgb(19, 1, 34);
+    position: fixed;
+    height: 95%;
+    text-decoration: none;
+    left: 10px;
+    top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(27, 27, 27, 0.884);
+    overflow: hidden;
+}
+
+.but {
+    display: block;
+    padding: 15px 5px;
+    height: 60px;
+    width: 60px;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: ghostwhite;
+}
+
+a:hover {
+    text-decoration: none;
+    color: aqua;
+    background-color: rgba(184, 185, 185, 0.548);
+}
+
+a:active {
+    background-color: rgba(184, 185, 185, 0.548);
+}
+
+#tools {
+    position: relative;
+    top: 50%;
+    bottom: 0;
+    background-color: rgba(87, 87, 87, 0.842);
+    border-radius: 5px;
+}
+
+.box1 {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 90px;
+    padding: 5px;
+    height: 95%;
+    width: 92%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(19, 1, 34);
+    box-shadow: 2px 2px 5px rgba(27, 27, 27, 0.884);
+}
+
+.box1::after {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 73px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    content: "";
+    border-right: 17px solid rgb(19, 1, 34);
+    border-bottom: 20px solid transparent;
+    z-index: 5;
+}
+
+.box2 {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 90px;
+    padding: 5px;
+    height: 95%;
+    width: 92%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(19, 1, 34);
+    box-shadow: 2px 2px 5px rgba(27, 27, 27, 0.884);
+}
+
+.box2::after {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: 73px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    content: "";
+    border-right: 17px solid rgb(19, 1, 34);
+    border-bottom: 20px solid transparent;
+    z-index: 5;
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+#submit {
+    position: absolute;
+    top: 70%;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    z-index: 10;
+    background-image: linear-gradient(gray, white);
+}
+
+
+/* form {
+    height: 100%;
+    width: 100%;
+} */
+
+.essay {
+    display: block;
+    position: relative;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    top: 80px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(131, 130, 128, 0.966);
+    resize: none;
+    color: rgb(12, 12, 12);
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
+
+/* #write {
+    position: relative;
+    top: 60px;
+    margin: auto;
+} */
+
+#reset {
+    position: absolute;
+    top: 80%;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    z-index: 10;
+    background-image: linear-gradient(gray, white);
+}
+
+#select {
+    position: absolute;
+    top: 83%;
+    left: 70%;
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.radio-box {
+    position: absolute;
+    top: 85%;
+    left: 60%;
+}
